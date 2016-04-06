@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body{
+	max-width: 1900px;
+	background-image: url("backgroud.jpg");
+}
+
+#info{
+	display:none;
+}
+
+#header{
+	padding:20px;
+	margin-top: 20x;
+	text-align: center;
+	color:white;
+}
+
+h4{
+	color:white;
+}
+#parent{
+	display:flex;
+}
+
+#profile{
+	display: none;
+	text-align:center;
+	background-color:white;
+	border : 2px solid grey;
+	width:20%;
+	margin:20px;
+	padding:10px;
+	font-size: 100%;
+	color: #6699CC;
+}
+
+.profile_container{
+	background:#ccc;
+	height:50px;
+	margin:20px;
+	text-align:center;
+}
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#events{
+	display: none;
+	text-align: justify;
+	background-color: white;
+	color: #6699CC;
+	border: 2px solid grey;
+	width: 50%;
+	padding: 10px;
+	margin: 20px;
+	font-size: 100%;
+	margin-left:50px;
+	float: right;
+}
+
+h1{
+	text-align:center;
+}
+
+td{
+	padding: 0 10px 0 10px;
+}
+
+#music{
+	width:20%;
+	margin: 20px;
+}
+
+#container{
+	text-align: center;
+}
+
+#search{
+	text-align: center;
+}
+
+body{
+	background-color: #E8E8E8;
+	font-family: 'Roboto';
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #33CC99;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+footer{
+	display:block;
+	float: center;
+}
+#credit{
+	color: 6699CC;
+	background-color:white;
+	float:center;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid grey;
+}
+
+

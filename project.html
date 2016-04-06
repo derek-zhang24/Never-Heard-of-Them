@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name = "author" content = "Derek Zhang">
+		<meta name = "description" content = "A web service for an artist's profile, music and upcoming music events.">
+		<title>Never Heard of Them</title>
+		<script src = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+		<script type = "text/javascript" src = "project.js"></script>
+		<script type = "text/javascript" src="spotify_en_tools.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "project.css">
+	</head>
+	
+	<body>
+		<div id ="header">
+			<h1>Never Heard of Them</h1>
+		</div>
+		
+		<div class= "tabs">
+		<!-- Navigation bar -->
+			<ul>
+				<li><a class="active" href="#home" onclick = "home();">Home</a></li>
+				<li><a href="#about" id = "about" onclick = "about();" >About</a></li>
+				<li><a href="#instructions" id = "instructions" onclick = "instructions();" >Instructions</a></li>
+			</ul>
+		</div>
+		
+		<section id = "container">
+		<!-- Query Boxes for Name, Location, Genre, Mood, Start Year, End Year -->
+		<!-- Search Button -->
+				<input id = "term" type = "text" style="width: 150px;"  placeholder = "Enter a specific artist" onclick = "this.value='';">
+				<h4>OR</h1>
+				<input id = "place" type = "text" style="width: 300px;" placeholder = "Enter a city,state ID 	i.e Los Angeles,CA" onclick = "this.value='';">
+				<input id = "genre" type = "text" placeholder = "Enter a genre" onclick = "this.value='';">
+				<input id = "mood" type = "text" placeholder = "Enter a mood" onclick = "this.value='';">
+				<input id = "year1" type = "text" style="width: 300px;" placeholder = "Enter a year artist started after" onclick = "this.value='';">
+				<input id = "year2" type = "text" style="width: 300px;" placeholder = "Enter a year artist retired before" onclick = "this.value='';">
+				<button id = "search" >Search</button>
+		</section>
+		
+		<div id = "parent">
+			<section id = "profile">
+			<!-- Profile. This is where the artist list also display. -->
+				<h1 id = "profile_title"></h1>
+				<div id = "profile_container"></div>
+			</section>
+			
+			<section id ="events">
+			<!-- Event table -->
+				<h1 id = "event_title"></h1>
+				<div id = "event_container"></div>
+			</section>
+			
+			<section id = "music">
+			<!-- Spotify Playlist -->
+			</section>
+		</div>
+
+		<footer>
+		<div id = "credit">
+		Powered by the information provided by <a href="https://www.bandsintown.com">Bandsintown</a> and <a href = 
+		" https://the.echonest.com/">Echo Nest</a> and also <a href = "https://developer.spotify.com/">Spotify</a>. All Credit goes to these sites. This site has no intent of copyright. 
+		</div>
+		</footer>
+	</body>
+</html>
